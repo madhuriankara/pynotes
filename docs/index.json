@@ -1,0 +1,57 @@
+[
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "TACTLABS "
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/python-note/python-addition/",
+	"title": "Python Addition",
+	"tags": [],
+	"description": "-",
+	"content": "a = 5 b = 7 c = a + b print(c) 11  "
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/python-note/python-division/",
+	"title": "Python Division",
+	"tags": [],
+	"description": "-",
+	"content": "a = 30 b = 6 c = a / b print(c) 5.0  "
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/python-note/",
+	"title": "Python-notes",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/python-note/simple-python/",
+	"title": "Simple Python",
+	"tags": [],
+	"description": "-",
+	"content": "print(\u0026#39;Hello Toronto\u0026#39;) Hello Toronto  print(2) 2  "
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/python-note/template/",
+	"title": "Template",
+	"tags": [],
+	"description": "-",
+	"content": "print(\u0026#39;Hello Toronto\u0026#39;) Hello Toronto  print(2) 2  "
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://tactlabs.github.io/hugobase-new/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

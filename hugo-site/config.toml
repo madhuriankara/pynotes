@@ -1,0 +1,7 @@
+baseURL = "https://tactlabs.github.io/hugobase-new/"
+languageCode = "en-us"
+title = "TACT"
+theme = "hugo-theme-learn"
+publishDir="../docs"
+[outputs]
+home = [ "HTML", "RSS", "JSON"]

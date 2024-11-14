@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on TACT</title>
-    <link>https://tactlabs.github.io/hugobase-new/tags/</link>
-    <description>Recent content in Tags on TACT</description>
+    <title>Tags on My Python Notes</title>
+    <link>https://madhuriankara.github.io/pynotes/tags/</link>
+    <description>Recent content in Tags on My Python Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://tactlabs.github.io/hugobase-new/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://madhuriankara.github.io/pynotes/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

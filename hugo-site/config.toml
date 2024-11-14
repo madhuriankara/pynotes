@@ -1,6 +1,6 @@
-baseURL = "https://tactlabs.github.io/hugobase-new/"
+baseURL = "https://madhuriankara.github.io/pynotes/"
 languageCode = "en-us"
-title = "TACT"
+title = "My Python Notes"
 theme = "hugo-theme-learn"
 publishDir="../docs"
 [outputs]

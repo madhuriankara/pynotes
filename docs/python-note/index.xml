@@ -6,10 +6,19 @@
     <description>Recent content in Python-notes on My Python Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://madhuriankara.github.io/pynotes/python-note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python Jellyfish</title>
+      <link>https://madhuriankara.github.io/pynotes/python-note/lev_distance/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://madhuriankara.github.io/pynotes/python-note/lev_distance/</guid>
+      <description>from Levenshtein import ratio def levenshtein_distance(str1, str2): if not str1: return len(str2) if not str2: return len(str1) if str1[0] == str2[0]: return levenshtein_distance(str1[1:], str2[1:]) return 1 + min( levenshtein_distance(str1[1:], str2), # Deletion levenshtein_distance(str1, str2[1:]), # Insertion levenshtein_distance(str1[1:], str2[1:]) # Substitution ) # Example usage: str1 = &amp;#34;kitten&amp;#34; str2 = &amp;#34;sitting&amp;#34; print(&amp;#34;Levenshtein Distance:&amp;#34;, levenshtein_distance(str1, str2)) # Calculate similarity using Levenshtein ratio similarity = ratio(str1, str2) print(&amp;#34;Similarity ratio:&amp;#34;, similarity) Levenshtein Distance: 3 Similarity ratio: 0.</description>
+    </item>
     
     <item>
       <title>Python Addition</title>
@@ -45,6 +54,15 @@
       
       <guid>https://madhuriankara.github.io/pynotes/python-note/template/</guid>
       <description>print(&amp;#39;Hello Toronto&amp;#39;) Hello Toronto  print(2) 2  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://madhuriankara.github.io/pynotes/python-note/jwjj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://madhuriankara.github.io/pynotes/python-note/jwjj/</guid>
+      <description>--- title: &amp;#34;Python Jellyfish&amp;#34; author: &amp;#34;TACT&amp;#34; date: 2024-11-15 description: &amp;#34;-&amp;#34; type: technical_note draft: false --- import jellyfish def levenshtein_distance(str1, str2): if not str1: return len(str2) if not str2: return len(str1) if str1[0] == str2[0]: return levenshtein_distance(str1[1:], str2[1:]) return 1 + min( levenshtein_distance(str1[1:], str2), # Deletion levenshtein_distance(str1, str2[1:]), # Insertion levenshtein_distance(str1[1:], str2[1:]) # Substitution ) # Example usage: str1 = &amp;#34;kitten&amp;#34; str2 = &amp;#34;sitting&amp;#34; print(&amp;#34;Levenshtein Distance:&amp;#34;, levenshtein_distance(str1, str2)) # Calculate similarity using Jellyfish&amp;#39;s Jaro-Winkler similarity similarity = jellyfish.</description>
     </item>
     
   </channel>

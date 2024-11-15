@@ -7,6 +7,20 @@
 	"content": "TACTLABS "
 },
 {
+	"uri": "https://madhuriankara.github.io/pynotes/python-note/lev_distance/",
+	"title": "Python Jellyfish",
+	"tags": [],
+	"description": "-",
+	"content": "from Levenshtein import ratio def levenshtein_distance(str1, str2): if not str1: return len(str2) if not str2: return len(str1) if str1[0] == str2[0]: return levenshtein_distance(str1[1:], str2[1:]) return 1 + min( levenshtein_distance(str1[1:], str2), # Deletion levenshtein_distance(str1, str2[1:]), # Insertion levenshtein_distance(str1[1:], str2[1:]) # Substitution ) # Example usage: str1 = \u0026#34;kitten\u0026#34; str2 = \u0026#34;sitting\u0026#34; print(\u0026#34;Levenshtein Distance:\u0026#34;, levenshtein_distance(str1, str2)) # Calculate similarity using Levenshtein ratio similarity = ratio(str1, str2) print(\u0026#34;Similarity ratio:\u0026#34;, similarity) Levenshtein Distance: 3 Similarity ratio: 0.6153846153846154  "
+},
+{
+	"uri": "https://madhuriankara.github.io/pynotes/python-note/",
+	"title": "Python-notes",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://madhuriankara.github.io/pynotes/python-note/python-addition/",
 	"title": "Python Addition",
 	"tags": [],
@@ -21,13 +35,6 @@
 	"content": "a = 30 b = 6 c = a / b print(c) 5.0  "
 },
 {
-	"uri": "https://madhuriankara.github.io/pynotes/python-note/",
-	"title": "Python-notes",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://madhuriankara.github.io/pynotes/python-note/simple-python/",
 	"title": "Simple Python",
 	"tags": [],
@@ -40,6 +47,13 @@
 	"tags": [],
 	"description": "-",
 	"content": "print(\u0026#39;Hello Toronto\u0026#39;) Hello Toronto  print(2) 2  "
+},
+{
+	"uri": "https://madhuriankara.github.io/pynotes/python-note/jwjj/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "--- title: \u0026#34;Python Jellyfish\u0026#34; author: \u0026#34;TACT\u0026#34; date: 2024-11-15 description: \u0026#34;-\u0026#34; type: technical_note draft: false --- import jellyfish def levenshtein_distance(str1, str2): if not str1: return len(str2) if not str2: return len(str1) if str1[0] == str2[0]: return levenshtein_distance(str1[1:], str2[1:]) return 1 + min( levenshtein_distance(str1[1:], str2), # Deletion levenshtein_distance(str1, str2[1:]), # Insertion levenshtein_distance(str1[1:], str2[1:]) # Substitution ) # Example usage: str1 = \u0026#34;kitten\u0026#34; str2 = \u0026#34;sitting\u0026#34; print(\u0026#34;Levenshtein Distance:\u0026#34;, levenshtein_distance(str1, str2)) # Calculate similarity using Jellyfish\u0026#39;s Jaro-Winkler similarity similarity = jellyfish.jaro_winkler_similarity(str1, str2) print(\u0026#34;Jaro-Winkler similarity:\u0026#34;, similarity) Levenshtein Distance: 3 Jaro-Winkler similarity: 0.746031746031746  "
 },
 {
 	"uri": "https://madhuriankara.github.io/pynotes/categories/",

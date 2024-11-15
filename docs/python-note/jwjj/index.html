@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/pynotes/images/favicon.png" type="image/png">
 
-    <title>Categories :: My Python Notes</title>
+    <title> :: My Python Notes</title>
 
     
     <link href="/pynotes/css/nucleus.css?1731683402" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/pynotes/categories/">
+  <body class="" data-url="/pynotes/python-note/jwjj/">
     <nav id="sidebar" class="">
 
 
@@ -86,8 +86,8 @@
   
     
     <li data-nav-id="/pynotes/python-note/" title="Python-notes" class="dd-item
+        parent
         
-        active
         
         ">
       <a href="/pynotes/python-note/">
@@ -217,7 +217,7 @@
  
   
     
-      <li data-nav-id="/pynotes/python-note/jwjj/" title="" class="dd-item ">
+      <li data-nav-id="/pynotes/python-note/jwjj/" title="" class="dd-item active">
         <a href="/pynotes/python-note/jwjj/">
         
         
@@ -281,7 +281,13 @@
             
           
           
-            <a href='/pynotes/'></a> > Categories
+            
+            
+          
+          
+            <a href='/pynotes/'></a> > <a href='/pynotes/python-note/'>Python-notes</a> > 
+          
+        
           
         
           
@@ -292,7 +298,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -308,18 +314,54 @@
           
             <h1>
               
-              Categories
+              
             </h1>
           
 
         
 
 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">---</span>
+title: <span style="color:#e6db74">&#34;Python Jellyfish&#34;</span>
+author: <span style="color:#e6db74">&#34;TACT&#34;</span>
+date: <span style="color:#ae81ff">2024</span><span style="color:#f92672">-</span><span style="color:#ae81ff">11</span><span style="color:#f92672">-</span><span style="color:#ae81ff">15</span>
+description: <span style="color:#e6db74">&#34;-&#34;</span>
+type: technical_note
+draft: false
+<span style="color:#f92672">---</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> jellyfish
 
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">levenshtein_distance</span>(str1, str2):
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> str1: <span style="color:#66d9ef">return</span> len(str2)
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> str2: <span style="color:#66d9ef">return</span> len(str1)
 
+    <span style="color:#66d9ef">if</span> str1[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> str2[<span style="color:#ae81ff">0</span>]:
+        <span style="color:#66d9ef">return</span> levenshtein_distance(str1[<span style="color:#ae81ff">1</span>:], str2[<span style="color:#ae81ff">1</span>:])
 
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> min(
+        levenshtein_distance(str1[<span style="color:#ae81ff">1</span>:], str2),   <span style="color:#75715e"># Deletion</span>
+        levenshtein_distance(str1, str2[<span style="color:#ae81ff">1</span>:]),   <span style="color:#75715e"># Insertion</span>
+        levenshtein_distance(str1[<span style="color:#ae81ff">1</span>:], str2[<span style="color:#ae81ff">1</span>:])  <span style="color:#75715e"># Substitution</span>
+    )
 
-<footer class=" footline" >
+<span style="color:#75715e"># Example usage:</span>
+str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;kitten&#34;</span>
+str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sitting&#34;</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Levenshtein Distance:&#34;</span>, levenshtein_distance(str1, str2))
+
+<span style="color:#75715e"># Calculate similarity using Jellyfish&#39;s Jaro-Winkler similarity</span>
+similarity <span style="color:#f92672">=</span> jellyfish<span style="color:#f92672">.</span>jaro_winkler_similarity(str1, str2)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Jaro-Winkler similarity:&#34;</span>, similarity)
+</code></pre></div><pre><code>Levenshtein Distance: 3
+Jaro-Winkler similarity: 0.746031746031746
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div>
+
+<footer class="footline">
 	
 </footer>
 
@@ -354,8 +396,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -369,6 +409,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -449,6 +492,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -473,8 +517,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/pynotes/python-note/template/" title="Template"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/pynotes/python-note/" title="Python-notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/pynotes/python-note/lev_distance/" title="Python Jellyfish" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -506,3 +552,4 @@
 
   </body>
 </html>
+
